@@ -1,0 +1,51 @@
+ body {
+   padding-left: 0;
+   padding-right: 0;
+ }
+ /* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+   margin-top: 0 !important;
+ }
+ #absolute-wrapper {
+   position: relative;
+   width: 320px;
+   margin: 0 auto;
+   height: 1px;
+ }
+ #absolute-wrapper .radio {
+   width: 300px;
+   height: 20px;
+   position: absolute;
+   top: 453px;
+   left: -560px;
+ }
+ #absolute-wrapper .btn {
+   background: transparent;
+   width: 68px;
+   height: 30px;
+   position: absolute;
+   top: 564px;
+   left: -565px;
+ }
+ .container-fluid {
+   background: rgba(0, 0, 0, 0) url(../images/source.jpg) repeat 0px 0px;
+   height: 800px;
+ }
+ .container-fluid .container .heading {
+   margin: 100px 0px 10px 0px;
+   font-family:"helvetica neue";
+   font-size: 35px;
+   text-align: center;
+   color: #ffffff;
+ }
+ .container-fluid div.div-1 {
+   margin: 80px 0px 0px 0px;
+ }
+ .container-fluid div .btn {
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   -o-box-shadow: none;
+   box-shadow: none;
+   text-shadow: none;
+ }
