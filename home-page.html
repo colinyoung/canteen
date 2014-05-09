@@ -18,26 +18,40 @@
   </head>
   
   <body>
-    <div id="absolute-wrapper">
+    <!-- <div id="absolute-wrapper">
       <label class="radio">
         <input type="radio" value="" name="">
         <span>Radio button</span>
       </label>
       <button class="btn">Button</button>
-    </div>
+    </div> -->
+    <h1 class="heading">SharedKitchens</h1>
     <div class="container-fluid">
-      <h1 class="heading">Logo</h1>
       <div class="container">
-        <h1 class="heading"> <strong>Keeping up with orders is tough.<br>Finding kitchen space shouldn't be.</strong>
+          <h1 class="heading">
+          Keeping up with orders is tough.<br>Finding kitchen space shouldn't be.
+          </h1>
+        </div>
+      <form action="http://tumblr.us2.list-manage.com/subscribe/post" target="_blank" id="form" method="post">
+        <input type="hidden" name="u" value="6fff8f893035a40478ba5b0ed">
+        <input type="hidden" name="id" value="5b761529b3">
+        <div class="div-1">
+          <input class="textinput pull-center" type="text" placeholder="Email address" name="MERGE0">
+        </div>
+        <div>
+          <input type="submit" class="btn pull-center" value="Show me kitchens!" />
+        </div>
+      </form>
 
-        </h1>
-      </div>
-      <div class="div-1">
-        <input class="textinput pull-center" type="text" placeholder="Email address" name="">
-      </div>
-      <div>
-        <a class="btn pull-center" href="kitchen-map.html">Show me kitchens!</a>
-      </div>
+      <script type="text/javascript">
+      document.getElementById('form').addEventListener('submit', function(e) {
+        setTimeout(function() {
+          document.location = "/kitchen-map.html";
+        }, 200)
+      })
+      </script>
+
+      <iframe name="formsubmit" id="formsubmit" src="about:blank" style="display: none"></iframe>
     </div>
   </body>
 

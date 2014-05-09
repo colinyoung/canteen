@@ -9,10 +9,6 @@
 
 }
 
- #map-container {
-   width: 100%;
- }
-
  /* This makes absolutely positioned elements like p, h1,
      and some bootstrap elements placed properly. */
  #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
@@ -45,4 +41,11 @@
  }
  .container-fluid .row-fluid .span4 .well {
    margin: 0px 5px 20px 5px;
+ }
+ #map {
+   z-index: 1;
+ }
+
+ #page-container {
+   z-index: 10;
  }
