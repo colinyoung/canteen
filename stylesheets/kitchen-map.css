@@ -49,3 +49,7 @@
  #page-container {
    z-index: 10;
  }
+
+ #map-container {
+   padding-top: 20px;
+ }

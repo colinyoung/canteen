@@ -5,7 +5,7 @@ body, html {
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
     background-size: cover;         /* Generic*/
-    background: #333 url(../images/source.jpg) no-repeat center 70px fixed;
+    background: #333 url(../images/source.jpg) no-repeat center 100% fixed;
  }
  /* This makes absolutely positioned elements like p, h1,
      and some bootstrap elements placed properly. */
@@ -41,9 +41,7 @@ body, html {
    text-align: center;
    color: #ffffff;
  }
- .container-fluid div.div-1 {
-   margin-top: 80px;
- }
+
  .container-fluid div .btn {
    -moz-box-shadow: none;
    -webkit-box-shadow: none;
@@ -58,23 +56,49 @@ body, html {
    text-align: center
  }
 
- .container-fluid > form > div input[type=text], .container-fluid > div input[type=email]  {
-   width: 90%;
+ input[type=email], input[type=text] {
+  box-sizing: border-box;
+  padding: 15px 5px;
  }
 
  .container-fluid > form > div input[type=submit] {
    padding: .5ex 3em;
  }
 
- h1.heading {
+body > h1.heading {
    padding-left: 10px;
    line-height: 70px;
    margin: 0;
-   height: 70px;
-   background-color: white
+   background-color: white;
+ }
+
+ .container {
+    background-color: transparent;
+    padding: 0 1em;
+ }
+
+ @media screen and (min-height: 600px) {
+  .container {
+    padding-top: 100px;
+  }
  }
 
  .container h1 {
-   line-height: 200%;
-   background-color: rgba(0,0,0,0.3);
+   line-height: 150%;
+   background-color: transparent;
+ }
+
+ form {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+ }
+
+ form input[type=email] {
+    width: 100%
+ }
+
+ form input[type=submit] {
+    width: 100%
  }
